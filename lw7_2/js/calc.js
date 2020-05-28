@@ -76,17 +76,17 @@ function mathematics(oper, firstNum, secNum) {
             break;
         }
         case '/' : {
-			firstNum = parseFloat(firstNum) / parseFloat(secNum);
-			break;
-		}
+	    firstNum = parseFloat(firstNum) / parseFloat(secNum);
+	    break;
+	}
         case '+' : {
-			firstNum = parseFloat(firstNum) + parseFloat(secNum); 
-			break;
-		}
+	    firstNum = parseFloat(firstNum) + parseFloat(secNum); 
+	    break;
+	}
         case '-' : {
-			firstNum = parseFloat(firstNum) - parseFloat(secNum); 
-			break;
-		}
+	    firstNum = parseFloat(firstNum) - parseFloat(secNum); 
+	    break;
+	}
     }
     firstNum = firstNum.toString();
     return firstNum;
