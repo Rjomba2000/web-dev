@@ -6,13 +6,13 @@
     else
     {
         $email = $_GET['email'];
-        if (file_exists('data/'.$email.'.txt'))
+        if (file_exists('data/' . $email . '.txt'))
         {
-            $fPerson = fopen('data/'.$email.'.txt', 'r');
+            $fPerson = fopen('data/' . $email . '.txt', 'r');
             while (!feof($fPerson))
             {
                 $mytext = fgets($fPerson, 999);
-                echo $mytext."<br />";
+                echo $mytext . "<br />";
             }
         }
         else
